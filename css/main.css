@@ -46,7 +46,10 @@ div#svgShape {
 }
 
 svg {
-	width:100%;
+	width:100%;	
+	background-image:url('../img/bg.svg');
+	background-position: center;
+	background-repeat:no-repeat; 
 }
 svg text {
 	font-size:0.8em;
@@ -57,17 +60,17 @@ svg text:hover {
 	fill:#444444;
 }
 svg g circle {
-	fill:#BCEBF5;
+	fill:#FDFAD8;
 	cursor:pointer;
 }
 svg g circle:hover {
-	fill:#69B7BF;
+	fill:#FEC979;
 }
 .old {
-	fill:#BCEBF5;
+	fill:#FDFAD8;
 }
 .newclass {
-	fill:#69B7BF;
+	fill:#FEC979;
 }
 .oldText {
 	fill:#EDEDED;
@@ -105,7 +108,7 @@ div#nav li a {
 }
 
 div.section_wrap {
-	padding-top: 300px;
+	padding-top: 360px;
 }
 div.section {
 	width:100%;
