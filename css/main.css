@@ -47,9 +47,15 @@ div#svgShape {
 
 svg {
 	width:100%;	
-	background-image:url('../img/bg.svg');
+	background-image:url('../img/bg.png');
+	background-size:100% ;
 	background-position: center;
 	background-repeat:no-repeat; 
+	image-rendering: -moz-optimizeQuality;         /* Firefox */
+    image-rendering:   -o-optimizeQuality;         /* Opera */
+    image-rendering: -webkit-optimize-contrast;/* Webkit (non-standard naming) */
+    image-rendering: optimizeQuality;
+    -ms-interpolation-mode: nearest-neighbor;  /* IE (non-standard property) */
 }
 svg text {
 	font-size:0.8em;
