@@ -13,6 +13,27 @@ $(document).ready(function(){
 
     })//end click
 
+    //hover 
+    $("circle").hover(
+        function(){
+            $(this).attr("class", "old newclass");
+            $(this).parent().find('text').attr("class", "oldText newclassText");
+        },function(){
+            $(this).attr("class", "old");
+            $(this).parent().find("text").attr("class", "oldText");
+        }
+    );
+    $("text").hover(
+        function(){
+            $(this).attr("class", "oldText newclassText");
+            $(this).parent().find('circle').attr("class", "old newclass");
+        },function(){
+            $(this).attr("class", "oldText");
+            $(this).parent().find("circle").attr("class", "old");
+        }
+    );
+
+
     var navChild = $("g");
     var navHref = [];
     
@@ -53,5 +74,8 @@ $(document).ready(function(){
             }
         }
     }); 
+
+    
+
 });//end ready
 

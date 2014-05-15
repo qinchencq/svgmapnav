@@ -52,37 +52,46 @@ svg {
 	background-position: center;
 	background-repeat:no-repeat; 
 	image-rendering: -moz-optimizeQuality;         /* Firefox */
-    image-rendering:   -o-optimizeQuality;         /* Opera */
+    image-rendering: -o-optimizeQuality;         /* Opera */
     image-rendering: -webkit-optimize-contrast;/* Webkit (non-standard naming) */
     image-rendering: optimizeQuality;
     -ms-interpolation-mode: nearest-neighbor;  /* IE (non-standard property) */
 }
-svg text {
+svg g rect {
+	fill:#3F3F3F;
+	fill-opacity:0.7;
+}
+svg g#credit text {
 	font-size:0.8em;
+	fill:#E2E2E2;
+	cursor:default;
+}
+svg g text{
+	font-size:1.1em;
 	fill:#EDEDED;
 	cursor:pointer;
 }
-svg text:hover {
-	fill:#444444;
-}
+/*svg g text:hover {
+	fill:#F5D159;
+}*/
 svg g circle {
-	fill:#FDFAD8;
+	fill:#BCEBF5;
 	cursor:pointer;
 }
-svg g circle:hover {
-	fill:#FEC979;
-}
+/*svg g circle:hover {
+	fill:#1A5B71;
+}*/
 .old {
-	fill:#FDFAD8;
+	fill:#BCEBF5;
 }
 .newclass {
-	fill:#FEC979;
+	fill:#1A5B71;	
 }
 .oldText {
 	fill:#EDEDED;
 }
 .newclassText {
-	fill:#444444;
+	fill:#F5D159;
 }
 /*Nav*/
 /*Body*/
